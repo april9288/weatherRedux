@@ -4,7 +4,7 @@ import moment from 'moment';
 
 const Chart2 = ({data_set}) => {
 	return (
-		<ResponsiveContainer width="85%" height={250}>
+		<ResponsiveContainer width="85%" height={250} className = "responsiveContainer">
 		<BarChart data={data_set}>
 		  <CartesianGrid strokeDasharray="3 3" />
 		 	<XAxis dataKey='weekday' 

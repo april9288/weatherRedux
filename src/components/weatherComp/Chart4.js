@@ -4,7 +4,7 @@ import moment from 'moment';
 
 const Chart4 = ({data_set}) => {
   return (
-        <ResponsiveContainer width="85%" height={250}>
+        <ResponsiveContainer width="85%" height={250} className = "responsiveContainer lastContainer">
           <AreaChart data={data_set} syncId="anyId"
                 margin={{top: 0, right: 0, left: 0, bottom: 0}}>
             <XAxis dataKey='weekday' 

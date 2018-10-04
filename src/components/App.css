@@ -1,3 +1,23 @@
 .App {
   text-align: center;
 }
+
+.responsiveContainer {
+	margin-top : 15%;
+}
+
+.lastContainer {
+	margin-bottom : 10%;
+}
+
+.footerIcons{
+	color:white;
+	font-size: 3rem;
+	margin: 0 1rem;
+	transition: all .2s ease-in-out;
+}
+
+.footerIcons:hover{
+	color: #E94057;
+	transform: scale(1.1);
+}

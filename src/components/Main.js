@@ -2,6 +2,7 @@ import React from 'react';
 import WeatherMain from './weatherComp/WeatherMain';
 import ChartMain from './weatherComp/ChartMain';
 import Wrong from './weatherComp/Wrong';
+import Footer from './Footer';
 
 const Main = ({location, weatherData}) => {
 	if (weatherData !== "error") {
@@ -9,6 +10,7 @@ const Main = ({location, weatherData}) => {
 			<div>
 			<WeatherMain location={location} weatherData={weatherData} />
 			<ChartMain updates={weatherData.daily.data} />
+			<Footer />
 			</div>
 			);
 	} else {

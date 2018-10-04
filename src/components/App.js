@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Main from './Main';
 import Progressbar from './Progressbar';
+import Main from './Main';
 import './App.css';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
