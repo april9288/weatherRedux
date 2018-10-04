@@ -52,8 +52,6 @@ class App extends Component {
   render() {
 
     const { searchField, onSearchChange, weatherData, isPending, location } = this.props;
-    console.log(weatherData);
-
     return (
       <div className="App">
         <MuiThemeProvider theme={theme}>

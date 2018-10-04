@@ -4,7 +4,6 @@ export const setSearchField = (text) => ({
 })
 
 export const requestWeather = (event) => (dispatch) => {
-    console.log("requested zip code : ", event);
     dispatch({ type: "REQUEST_WEATHER_PENDING" })
 
     const Google_API = "AIzaSyDNbz3odAS6Mfs-Wh-W9zHPUwMDpvC3exk";
@@ -14,7 +13,8 @@ export const requestWeather = (event) => (dispatch) => {
         .then(response => response.json())
         .then(response => {
           if (response.status === "ZERO_RESULTS") {
-            throw new Error("Unable to find that address");
+            dispatch({ type: "REQUEST_WEATHER_FAILED", payload: "error" })
+            //throw new Error("Unable to find that address");
           } else {
             
             let location = response.results[0].address_components[1].short_name;
@@ -29,7 +29,7 @@ export const requestWeather = (event) => (dispatch) => {
         })
         .then(response => response.json())
         .then(data => dispatch({ type: "REQUEST_WEATHER_SUCCESS", payload: data }))
-        .catch(error => dispatch({ type: "REQUEST_WEATHER_FAILED", payload: error }))
+        .catch(error => dispatch({ type: "REQUEST_WEATHER_FAILED", payload: "error" }))
 
 }
 
