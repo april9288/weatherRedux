@@ -58,7 +58,7 @@ class App extends Component {
           <Header searchChange={onSearchChange} enter={this.enter}/>
           { isPending 
             ? <Progressbar />
-            : <Main location = {location} data={weatherData}/>
+            : <Main location = {location} weatherData={weatherData}/>
           }
         </MuiThemeProvider>
       </div>

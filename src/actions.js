@@ -1,7 +1,16 @@
+// import { mockData } from './templates/sample';
+
 export const setSearchField = (text) => ({
 	type : 'CHANGE_SEARCH_FIELD',
 	payload: text
 })
+
+// export const requestWeather = (event) => (dispatch) => {
+//     dispatch({ type: "REQUEST_WEATHER_LOCATION", location: "Torrance" })
+//     dispatch({ type: "REQUEST_WEATHER_SUCCESS", payload: mockData })
+// }
+
+
 
 export const requestWeather = (event) => (dispatch) => {
     dispatch({ type: "REQUEST_WEATHER_PENDING" })

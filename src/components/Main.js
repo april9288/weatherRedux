@@ -1,22 +1,20 @@
 import React from 'react';
+import WeatherMain from './weatherComp/WeatherMain';
+import ChartMain from './weatherComp/ChartMain';
+import Wrong from './weatherComp/Wrong';
 
-const Main = ({location, data}) => {
-
-	console.log(data);
-
-	if (data !== "error") {
+const Main = ({location, weatherData}) => {
+	if (weatherData !== "error") {
 		return (
 			<div>
-				<p>{location}</p>
-				<p>{data.currently.summary}</p>
+			<WeatherMain location={location} weatherData={weatherData} />
+			<ChartMain updates={weatherData.daily.data} />
 			</div>
 			);
 	} else {
-		return <div><p>Wrong Address</p></div>
+		return <Wrong />
 	}
-
 }
-
 export default Main;
 
 
