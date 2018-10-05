@@ -8,7 +8,6 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { connect } from 'react-redux';
 import { setSearchField, requestWeather } from '../actions';
 
-
 const mapStateToProps = (state) => {
   return {
     searchField: state.basicReducers.searchField,
@@ -24,8 +23,6 @@ const mapDispatchToProps = (dispatch) => {
     onRequestWeather: (searchField) => dispatch(requestWeather(searchField))
   }
 }
-
-
 
 const theme = createMuiTheme({
    palette: {
@@ -50,8 +47,7 @@ class App extends Component {
     }
 
   render() {
-
-    const { searchField, onSearchChange, weatherData, isPending, location } = this.props;
+    const { onSearchChange, weatherData, isPending, location } = this.props;
     return (
       <div className="App">
         <MuiThemeProvider theme={theme}>

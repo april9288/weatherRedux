@@ -4,6 +4,7 @@
 /node_modules
 /src/templates
 /src/tests
+.env
 
 # testing
 /coverage

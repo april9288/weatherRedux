@@ -10,12 +10,10 @@ export const setSearchField = (text) => ({
 //     dispatch({ type: "REQUEST_WEATHER_SUCCESS", payload: mockData })
 // }
 
-
-
 export const requestWeather = (event) => (dispatch) => {
     dispatch({ type: "REQUEST_WEATHER_PENDING" })
 
-    const Google_API = "AIzaSyDNbz3odAS6Mfs-Wh-W9zHPUwMDpvC3exk";
+    const Google_API = process.env.REACT_APP_API_KEY_GOOGLE;
     let encoded_input = encodeURIComponent(event);
     let map_address = `https://maps.googleapis.com/maps/api/geocode/json?address=${encoded_input}&key=${Google_API}`;
     fetch(map_address)
@@ -31,7 +29,7 @@ export const requestWeather = (event) => (dispatch) => {
 
             let lat = response.results[0].geometry.location.lat;
             let lon = response.results[0].geometry.location.lng;
-            const API_KEY = '5aa08ac0612a0f8f60ef7332036c2d97';
+            const API_KEY = process.env.REACT_APP_API_KEY_DarkSky;
             let weather_API = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${API_KEY}/${lat},${lon}`;
             return fetch(weather_API);
           }

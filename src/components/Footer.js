@@ -26,8 +26,8 @@ const Footer = ({ classes }) => {
         <Grid container className={classes.footerContainer}>
 
             <Grid item xs={12} sm={12} className={classes.bottomGrid}>
-              <a target="_blank" href="https://github.com/april9288/" sytle={{textDecoration: "none"}}><i className="fab fa-github-square footerIcons"></i></a>
-              <a target="_blank" href="https://www.linkedin.com/in/jongho-kim-b05618170/" sytle={{textDecoration: "none"}}><i className="fab fa-linkedin footerIcons"></i></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/april9288/" sytle={{textDecoration: "none"}}><i className="fab fa-github-square footerIcons"></i></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jongho-kim-b05618170/" sytle={{textDecoration: "none"}}><i className="fab fa-linkedin footerIcons"></i></a>
             </Grid>
 
             <Divider />
