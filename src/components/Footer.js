@@ -34,7 +34,7 @@ const Footer = ({ classes }) => {
 
             <Grid item xs={12} sm={12} className={classes.bottomGrid}>
               <p className={classes.title}>
-                Made with Love By James Jongho Kim
+                &copy; 2018 James Jongho Kim All Rights Reserved
               </p>
             </Grid>
 
