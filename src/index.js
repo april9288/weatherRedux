@@ -7,11 +7,17 @@ import registerServiceWorker from './registerServiceWorker';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
+import { createLogger } from 'redux-logger';
 import { basicReducers, requestWeatherR } from './reducers';
 
-const rootReducers = combineReducers({basicReducers, requestWeatherR})
+const logger = createLogger();
+let middleware = [thunkMiddleware];
+if (process.env.NODE_ENV === 'development') { 
+  middleware.push(logger)
+};
 
-const store = createStore(rootReducers, applyMiddleware(thunkMiddleware))
+const rootReducers = combineReducers({basicReducers, requestWeatherR})
+const store = createStore(rootReducers, applyMiddleware(...middleware));
 
 ReactDOM.render(
   <Provider store={store}>
