@@ -13,6 +13,14 @@ import HumidityIcon from '@material-ui/icons/Opacity';
 
 import ReactAnimatedWeather from 'react-animated-weather';
 
+import TempSwitch from './TempSwitch';
+import { connect } from 'react-redux';
+
+const mapStateToProps = (state) => {
+  return {
+    currentTemp: state.setCurrentTempReducer.currentTemp,
+  }
+}
 
 const new_icon = (input) => {
   let new_icon = "";
@@ -70,7 +78,10 @@ const styles = {
   }
 };
 
-const WeatherMain = ({ classes, location, weatherData }) => {
+const WeatherMain = ({ classes, location, weatherData, currentTemp }) => {
+
+
+
 
     let timenow = moment.unix(weatherData.currently.time).format("MMM/DD");
 
@@ -108,9 +119,12 @@ const WeatherMain = ({ classes, location, weatherData }) => {
 
             <Grid item xs={12} sm={6} className={classes.tempGrid}>
 
+
                 <Typography variant="headline" className={classes.tempLetter}>
+                  <TempSwitch />
+                  <br />
                   <i className="fas fa-thermometer-empty"></i>
-                  <span style={{marginLeft: "0.5rem"}}>{weatherData.currently.apparentTemperature}</span>
+                  <span style={{marginLeft: "0.5rem"}}>{currentTemp || weatherData.currently.apparentTemperature}</span>
                   <DgreeIcon style={{paddingBottom: "2rem"}} />
                   <br />
                   <span style={{fontSize: "1.5rem"}}>{weatherData.currently.summary}</span>
@@ -149,4 +163,4 @@ WeatherMain.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(WeatherMain);
+export default connect(mapStateToProps)(withStyles(styles)(WeatherMain));

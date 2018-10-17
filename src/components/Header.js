@@ -7,6 +7,15 @@ import Input from '@material-ui/core/Input';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
+import { connect } from 'react-redux';
+import { requestWeather } from './redux/actions';
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onRequestWeather: (searchField) => dispatch(requestWeather(searchField))
+  }
+}
+
 
 const styles = theme => ({
   root: {
@@ -64,44 +73,54 @@ const styles = theme => ({
   },
 });
 
-const Header = ({ classes, searchChange, enter }) => {
 
-  return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography className={classes.title} variant="title" color="inherit" noWrap>
-            Weather
-          </Typography>
-          <div className={classes.grow} />
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
+class Header extends React.Component {
+
+  enter = (event) => {
+    if (event.key === "Enter") {
+      this.props.onRequestWeather(event.target.value);
+    }
+  }
+
+
+  render() {
+    const { classes } = this.props
+
+    return (
+      <div className={classes.root}>
+        <AppBar position="static">
+          <Toolbar>
+            <Typography className={classes.title} variant="title" color="inherit" noWrap>
+              Weather
+            </Typography>
+            <div className={classes.grow} />
+            <div className={classes.search}>
+              <div className={classes.searchIcon}>
+                <SearchIcon />
+              </div>
+              <Input
+                onKeyPress={this.enter}
+                placeholder="Zip Code"
+                disableUnderline
+                classes={{
+                  root: classes.inputRoot,
+                  input: classes.inputInput,
+                }}
+              />
             </div>
-            <Input
-              onChange={searchChange}
-              onKeyPress={enter}
-              placeholder="Zip Code"
-              disableUnderline
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-            />
-          </div>
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
+          </Toolbar>
+        </AppBar>
+      </div>
+    );
+  }
 }
+
 
 Header.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Header);
-// const styledComponent = withStyles(styles)(Header);
-// export default connect(mapStateToProps, mapDispatchToProps)(styledComponent);
+export default connect(undefined, mapDispatchToProps)(withStyles(styles)(Header));
 
 
 

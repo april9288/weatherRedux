@@ -1,8 +1,8 @@
 // import { mockData } from './templates/sample';
 
-export const setSearchField = (text) => ({
-	type : 'CHANGE_SEARCH_FIELD',
-	payload: text
+export const setCurrentTempAction = (temp) => ({
+    type : 'CURRENT_TEMP',
+    payload: temp
 })
 
 export const requestWeather = (event) => (dispatch) => {

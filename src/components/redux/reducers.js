@@ -1,14 +1,10 @@
-const initialState = {
-	searchField: ''
-}
-
-export const searchFieldReducer = (state = initialState, action = {}) => {
-	switch(action.type) {
-		case "CHANGE_SEARCH_FIELD":
-			return Object.assign({}, state, {searchField: action.payload});
-		default:
-			return state;
-	}
+export const setCurrentTempReducer = (state = {currentTemp: 0}, action = {}) => {
+  switch(action.type) {
+    case "CURRENT_TEMP":
+      return Object.assign({}, state, {currentTemp: action.payload});
+    default:
+      return state;
+  }
 }
 
 const initialStateWeather = {
