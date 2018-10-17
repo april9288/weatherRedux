@@ -10,10 +10,10 @@ import { setSearchField, requestWeather } from '../actions';
 
 const mapStateToProps = (state) => {
   return {
-    searchField: state.basicReducers.searchField,
-    weatherData: state.requestWeatherR.weatherData,
-    isPending: state.requestWeatherR.isPending,
-    location: state.requestWeatherR.location
+    searchField: state.searchFieldReducer.searchField,
+    weatherData: state.requestDataReducer.weatherData,
+    isPending: state.requestDataReducer.isPending,
+    location: state.requestDataReducer.location
   }
 }
 
@@ -36,9 +36,30 @@ const theme = createMuiTheme({
 });
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      tempFormatinF : true,
+      currentTemp : 0
+    }
+  }
+
   componentDidMount() {
     this.props.onRequestWeather(90502);
+    this.setState({})
     }
+
+  tempFormat = () => {
+    this.setState({tempFormatinF : !this.state.tempFormatinF})
+    let currentTemp = this.props.weatherData.currently.apparentTemperature
+    if (this.state.tempFormatinF) {
+      this.setState({currentTemp})
+    } else {
+      let currentTempInC = ((currentTemp - 32) * 5/9)
+      console.log(currentTempInC)
+      this.setState({currentTemp : currentTempInC})
+    }
+  }
 
   enter = (event) => {
       if (event.key === "Enter") {

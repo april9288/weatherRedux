@@ -2,7 +2,7 @@ const initialState = {
 	searchField: ''
 }
 
-export const basicReducers = (state = initialState, action = {}) => {
+export const searchFieldReducer = (state = initialState, action = {}) => {
 	switch(action.type) {
 		case "CHANGE_SEARCH_FIELD":
 			return Object.assign({}, state, {searchField: action.payload});
@@ -17,7 +17,7 @@ const initialStateWeather = {
   location: ''
 }
 
-export const requestWeatherR = (state=initialStateWeather, action={}) => {
+export const requestDataReducer = (state=initialStateWeather, action={}) => {
   switch (action.type) {
     case "REQUEST_WEATHER_PENDING":
       return Object.assign({}, state, {isPending: true})

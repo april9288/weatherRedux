@@ -71,15 +71,19 @@ const styles = {
 };
 
 const WeatherMain = ({ classes, location, weatherData }) => {
-  let timenow = moment.unix(weatherData.currently.time).format("MMM-DD");
-  if (weatherData !== "error") {
-    const defaults = {
-      temp : weatherData.currently.temperature,
-      icon: new_icon(weatherData.currently.icon),
-      color: '#924da3',
-      size: 150,
-      animate: true
-    };
+
+    let timenow = moment.unix(weatherData.currently.time).format("MMM/DD");
+
+    if (weatherData !== "error") {
+      const defaults = {
+        temp : weatherData.currently.temperature,
+        icon: new_icon(weatherData.currently.icon),
+        color: '#924da3',
+        size: 150,
+        animate: true
+      };
+
+
     return (
       <Card className={classes.card}>
         <CardContent>

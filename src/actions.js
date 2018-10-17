@@ -5,11 +5,6 @@ export const setSearchField = (text) => ({
 	payload: text
 })
 
-// export const requestWeather = (event) => (dispatch) => {
-//     dispatch({ type: "REQUEST_WEATHER_LOCATION", location: "Torrance" })
-//     dispatch({ type: "REQUEST_WEATHER_SUCCESS", payload: mockData })
-// }
-
 export const requestWeather = (event) => (dispatch) => {
     dispatch({ type: "REQUEST_WEATHER_PENDING" })
 
