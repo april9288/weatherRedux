@@ -1,0 +1,977 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expects to render Chart3 comp 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Chart3 />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <AreaChart
+        barCategoryGap="10%"
+        barGap={4}
+        data={undefined}
+        layout="horizontal"
+        margin={
+                Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                      }
+        }
+        reverseStackOrder={false}
+        stackOffset="none"
+        syncId="anyId"
+>
+        <XAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                dataKey="weekday"
+                domain={
+                        Array [
+                                0,
+                                "auto",
+                              ]
+                }
+                height={30}
+                hide={false}
+                mirror={false}
+                orientation="bottom"
+                padding={
+                        Object {
+                                "left": 0,
+                                "right": 0,
+                              }
+                }
+                reversed={false}
+                scale="auto"
+                stroke="black"
+                tickCount={5}
+                tickFormatter={[Function]}
+                type="category"
+                width={0}
+                xAxisId={0}
+        />
+        <YAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                domain={
+                        Array [
+                                "auto",
+                                "auto",
+                              ]
+                }
+                height={0}
+                hide={false}
+                mirror={false}
+                orientation="left"
+                padding={
+                        Object {
+                                "bottom": 0,
+                                "top": 0,
+                              }
+                }
+                reversed={false}
+                scale="auto"
+                stroke="black"
+                tickCount={5}
+                type="number"
+                width={60}
+                yAxisId={0}
+        />
+        <CartesianGrid
+                fill="none"
+                horizontal={true}
+                horizontalFill={Array []}
+                horizontalPoints={Array []}
+                stroke="#ccc"
+                strokeDasharray="3 3"
+                vertical={true}
+                verticalFill={Array []}
+                verticalPoints={Array []}
+        />
+        <Tooltip
+                active={false}
+                animationDuration={400}
+                animationEasing="ease"
+                contentStyle={Object {}}
+                coordinate={
+                        Object {
+                                "x": 0,
+                                "y": 0,
+                              }
+                }
+                cursor={true}
+                cursorStyle={Object {}}
+                filterNull={true}
+                isAnimationActive={true}
+                itemSorter={[Function]}
+                itemStyle={Object {}}
+                labelStyle={Object {}}
+                offset={10}
+                separator=" : "
+                useTranslate3d={false}
+                viewBox={
+                        Object {
+                                "x1": 0,
+                                "x2": 0,
+                                "y1": 0,
+                                "y2": 0,
+                              }
+                }
+                wrapperStyle={Object {}}
+        />
+        <Legend
+                align="center"
+                height={36}
+                iconSize={14}
+                layout="horizontal"
+                verticalAlign="top"
+        />
+        <Area
+                activeDot={true}
+                animationBegin={0}
+                animationDuration={1500}
+                animationEasing="ease"
+                connectNulls={false}
+                dataKey="uv"
+                dot={false}
+                fill="#8884d8"
+                fillOpacity={0.6}
+                hide={false}
+                isAnimationActive={true}
+                legendType="line"
+                points={Array []}
+                stroke="#8884d8"
+                type="monotone"
+                xAxisId={0}
+                yAxisId={0}
+        />
+</AreaChart>,
+      "className": "responsiveContainer",
+      "debounce": 0,
+      "height": 250,
+      "width": "85%",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "barCategoryGap": "10%",
+        "barGap": 4,
+        "children": Array [
+          <XAxis
+            allowDataOverflow={false}
+            allowDecimals={true}
+            allowDuplicatedCategory={true}
+            dataKey="weekday"
+            domain={
+                        Array [
+                                    0,
+                                    "auto",
+                                  ]
+            }
+            height={30}
+            hide={false}
+            mirror={false}
+            orientation="bottom"
+            padding={
+                        Object {
+                                    "left": 0,
+                                    "right": 0,
+                                  }
+            }
+            reversed={false}
+            scale="auto"
+            stroke="black"
+            tickCount={5}
+            tickFormatter={[Function]}
+            type="category"
+            width={0}
+            xAxisId={0}
+/>,
+          <YAxis
+            allowDataOverflow={false}
+            allowDecimals={true}
+            allowDuplicatedCategory={true}
+            domain={
+                        Array [
+                                    "auto",
+                                    "auto",
+                                  ]
+            }
+            height={0}
+            hide={false}
+            mirror={false}
+            orientation="left"
+            padding={
+                        Object {
+                                    "bottom": 0,
+                                    "top": 0,
+                                  }
+            }
+            reversed={false}
+            scale="auto"
+            stroke="black"
+            tickCount={5}
+            type="number"
+            width={60}
+            yAxisId={0}
+/>,
+          <CartesianGrid
+            fill="none"
+            horizontal={true}
+            horizontalFill={Array []}
+            horizontalPoints={Array []}
+            stroke="#ccc"
+            strokeDasharray="3 3"
+            vertical={true}
+            verticalFill={Array []}
+            verticalPoints={Array []}
+/>,
+          <Tooltip
+            active={false}
+            animationDuration={400}
+            animationEasing="ease"
+            contentStyle={Object {}}
+            coordinate={
+                        Object {
+                                    "x": 0,
+                                    "y": 0,
+                                  }
+            }
+            cursor={true}
+            cursorStyle={Object {}}
+            filterNull={true}
+            isAnimationActive={true}
+            itemSorter={[Function]}
+            itemStyle={Object {}}
+            labelStyle={Object {}}
+            offset={10}
+            separator=" : "
+            useTranslate3d={false}
+            viewBox={
+                        Object {
+                                    "x1": 0,
+                                    "x2": 0,
+                                    "y1": 0,
+                                    "y2": 0,
+                                  }
+            }
+            wrapperStyle={Object {}}
+/>,
+          <Legend
+            align="center"
+            height={36}
+            iconSize={14}
+            layout="horizontal"
+            verticalAlign="top"
+/>,
+          <Area
+            activeDot={true}
+            animationBegin={0}
+            animationDuration={1500}
+            animationEasing="ease"
+            connectNulls={false}
+            dataKey="uv"
+            dot={false}
+            fill="#8884d8"
+            fillOpacity={0.6}
+            hide={false}
+            isAnimationActive={true}
+            legendType="line"
+            points={Array []}
+            stroke="#8884d8"
+            type="monotone"
+            xAxisId={0}
+            yAxisId={0}
+/>,
+        ],
+        "data": undefined,
+        "layout": "horizontal",
+        "margin": Object {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+        },
+        "reverseStackOrder": false,
+        "stackOffset": "none",
+        "syncId": "anyId",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "allowDataOverflow": false,
+            "allowDecimals": true,
+            "allowDuplicatedCategory": true,
+            "dataKey": "weekday",
+            "domain": Array [
+              0,
+              "auto",
+            ],
+            "height": 30,
+            "hide": false,
+            "mirror": false,
+            "orientation": "bottom",
+            "padding": Object {
+              "left": 0,
+              "right": 0,
+            },
+            "reversed": false,
+            "scale": "auto",
+            "stroke": "black",
+            "tickCount": 5,
+            "tickFormatter": [Function],
+            "type": "category",
+            "width": 0,
+            "xAxisId": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "allowDataOverflow": false,
+            "allowDecimals": true,
+            "allowDuplicatedCategory": true,
+            "domain": Array [
+              "auto",
+              "auto",
+            ],
+            "height": 0,
+            "hide": false,
+            "mirror": false,
+            "orientation": "left",
+            "padding": Object {
+              "bottom": 0,
+              "top": 0,
+            },
+            "reversed": false,
+            "scale": "auto",
+            "stroke": "black",
+            "tickCount": 5,
+            "type": "number",
+            "width": 60,
+            "yAxisId": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "fill": "none",
+            "horizontal": true,
+            "horizontalFill": Array [],
+            "horizontalPoints": Array [],
+            "stroke": "#ccc",
+            "strokeDasharray": "3 3",
+            "vertical": true,
+            "verticalFill": Array [],
+            "verticalPoints": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "active": false,
+            "animationDuration": 400,
+            "animationEasing": "ease",
+            "contentStyle": Object {},
+            "coordinate": Object {
+              "x": 0,
+              "y": 0,
+            },
+            "cursor": true,
+            "cursorStyle": Object {},
+            "filterNull": true,
+            "isAnimationActive": true,
+            "itemSorter": [Function],
+            "itemStyle": Object {},
+            "labelStyle": Object {},
+            "offset": 10,
+            "separator": " : ",
+            "useTranslate3d": false,
+            "viewBox": Object {
+              "x1": 0,
+              "x2": 0,
+              "y1": 0,
+              "y2": 0,
+            },
+            "wrapperStyle": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "align": "center",
+            "height": 36,
+            "iconSize": 14,
+            "layout": "horizontal",
+            "verticalAlign": "top",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "activeDot": true,
+            "animationBegin": 0,
+            "animationDuration": 1500,
+            "animationEasing": "ease",
+            "connectNulls": false,
+            "dataKey": "uv",
+            "dot": false,
+            "fill": "#8884d8",
+            "fillOpacity": 0.6,
+            "hide": false,
+            "isAnimationActive": true,
+            "legendType": "line",
+            "points": Array [],
+            "stroke": "#8884d8",
+            "type": "monotone",
+            "xAxisId": 0,
+            "yAxisId": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <AreaChart
+          barCategoryGap="10%"
+          barGap={4}
+          data={undefined}
+          layout="horizontal"
+          margin={
+                    Object {
+                              "bottom": 0,
+                              "left": 0,
+                              "right": 0,
+                              "top": 0,
+                            }
+          }
+          reverseStackOrder={false}
+          stackOffset="none"
+          syncId="anyId"
+>
+          <XAxis
+                    allowDataOverflow={false}
+                    allowDecimals={true}
+                    allowDuplicatedCategory={true}
+                    dataKey="weekday"
+                    domain={
+                              Array [
+                                        0,
+                                        "auto",
+                                      ]
+                    }
+                    height={30}
+                    hide={false}
+                    mirror={false}
+                    orientation="bottom"
+                    padding={
+                              Object {
+                                        "left": 0,
+                                        "right": 0,
+                                      }
+                    }
+                    reversed={false}
+                    scale="auto"
+                    stroke="black"
+                    tickCount={5}
+                    tickFormatter={[Function]}
+                    type="category"
+                    width={0}
+                    xAxisId={0}
+          />
+          <YAxis
+                    allowDataOverflow={false}
+                    allowDecimals={true}
+                    allowDuplicatedCategory={true}
+                    domain={
+                              Array [
+                                        "auto",
+                                        "auto",
+                                      ]
+                    }
+                    height={0}
+                    hide={false}
+                    mirror={false}
+                    orientation="left"
+                    padding={
+                              Object {
+                                        "bottom": 0,
+                                        "top": 0,
+                                      }
+                    }
+                    reversed={false}
+                    scale="auto"
+                    stroke="black"
+                    tickCount={5}
+                    type="number"
+                    width={60}
+                    yAxisId={0}
+          />
+          <CartesianGrid
+                    fill="none"
+                    horizontal={true}
+                    horizontalFill={Array []}
+                    horizontalPoints={Array []}
+                    stroke="#ccc"
+                    strokeDasharray="3 3"
+                    vertical={true}
+                    verticalFill={Array []}
+                    verticalPoints={Array []}
+          />
+          <Tooltip
+                    active={false}
+                    animationDuration={400}
+                    animationEasing="ease"
+                    contentStyle={Object {}}
+                    coordinate={
+                              Object {
+                                        "x": 0,
+                                        "y": 0,
+                                      }
+                    }
+                    cursor={true}
+                    cursorStyle={Object {}}
+                    filterNull={true}
+                    isAnimationActive={true}
+                    itemSorter={[Function]}
+                    itemStyle={Object {}}
+                    labelStyle={Object {}}
+                    offset={10}
+                    separator=" : "
+                    useTranslate3d={false}
+                    viewBox={
+                              Object {
+                                        "x1": 0,
+                                        "x2": 0,
+                                        "y1": 0,
+                                        "y2": 0,
+                                      }
+                    }
+                    wrapperStyle={Object {}}
+          />
+          <Legend
+                    align="center"
+                    height={36}
+                    iconSize={14}
+                    layout="horizontal"
+                    verticalAlign="top"
+          />
+          <Area
+                    activeDot={true}
+                    animationBegin={0}
+                    animationDuration={1500}
+                    animationEasing="ease"
+                    connectNulls={false}
+                    dataKey="uv"
+                    dot={false}
+                    fill="#8884d8"
+                    fillOpacity={0.6}
+                    hide={false}
+                    isAnimationActive={true}
+                    legendType="line"
+                    points={Array []}
+                    stroke="#8884d8"
+                    type="monotone"
+                    xAxisId={0}
+                    yAxisId={0}
+          />
+</AreaChart>,
+        "className": "responsiveContainer",
+        "debounce": 0,
+        "height": 250,
+        "width": "85%",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "barCategoryGap": "10%",
+          "barGap": 4,
+          "children": Array [
+            <XAxis
+              allowDataOverflow={false}
+              allowDecimals={true}
+              allowDuplicatedCategory={true}
+              dataKey="weekday"
+              domain={
+                            Array [
+                                          0,
+                                          "auto",
+                                        ]
+              }
+              height={30}
+              hide={false}
+              mirror={false}
+              orientation="bottom"
+              padding={
+                            Object {
+                                          "left": 0,
+                                          "right": 0,
+                                        }
+              }
+              reversed={false}
+              scale="auto"
+              stroke="black"
+              tickCount={5}
+              tickFormatter={[Function]}
+              type="category"
+              width={0}
+              xAxisId={0}
+/>,
+            <YAxis
+              allowDataOverflow={false}
+              allowDecimals={true}
+              allowDuplicatedCategory={true}
+              domain={
+                            Array [
+                                          "auto",
+                                          "auto",
+                                        ]
+              }
+              height={0}
+              hide={false}
+              mirror={false}
+              orientation="left"
+              padding={
+                            Object {
+                                          "bottom": 0,
+                                          "top": 0,
+                                        }
+              }
+              reversed={false}
+              scale="auto"
+              stroke="black"
+              tickCount={5}
+              type="number"
+              width={60}
+              yAxisId={0}
+/>,
+            <CartesianGrid
+              fill="none"
+              horizontal={true}
+              horizontalFill={Array []}
+              horizontalPoints={Array []}
+              stroke="#ccc"
+              strokeDasharray="3 3"
+              vertical={true}
+              verticalFill={Array []}
+              verticalPoints={Array []}
+/>,
+            <Tooltip
+              active={false}
+              animationDuration={400}
+              animationEasing="ease"
+              contentStyle={Object {}}
+              coordinate={
+                            Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+              }
+              cursor={true}
+              cursorStyle={Object {}}
+              filterNull={true}
+              isAnimationActive={true}
+              itemSorter={[Function]}
+              itemStyle={Object {}}
+              labelStyle={Object {}}
+              offset={10}
+              separator=" : "
+              useTranslate3d={false}
+              viewBox={
+                            Object {
+                                          "x1": 0,
+                                          "x2": 0,
+                                          "y1": 0,
+                                          "y2": 0,
+                                        }
+              }
+              wrapperStyle={Object {}}
+/>,
+            <Legend
+              align="center"
+              height={36}
+              iconSize={14}
+              layout="horizontal"
+              verticalAlign="top"
+/>,
+            <Area
+              activeDot={true}
+              animationBegin={0}
+              animationDuration={1500}
+              animationEasing="ease"
+              connectNulls={false}
+              dataKey="uv"
+              dot={false}
+              fill="#8884d8"
+              fillOpacity={0.6}
+              hide={false}
+              isAnimationActive={true}
+              legendType="line"
+              points={Array []}
+              stroke="#8884d8"
+              type="monotone"
+              xAxisId={0}
+              yAxisId={0}
+/>,
+          ],
+          "data": undefined,
+          "layout": "horizontal",
+          "margin": Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+          },
+          "reverseStackOrder": false,
+          "stackOffset": "none",
+          "syncId": "anyId",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowDataOverflow": false,
+              "allowDecimals": true,
+              "allowDuplicatedCategory": true,
+              "dataKey": "weekday",
+              "domain": Array [
+                0,
+                "auto",
+              ],
+              "height": 30,
+              "hide": false,
+              "mirror": false,
+              "orientation": "bottom",
+              "padding": Object {
+                "left": 0,
+                "right": 0,
+              },
+              "reversed": false,
+              "scale": "auto",
+              "stroke": "black",
+              "tickCount": 5,
+              "tickFormatter": [Function],
+              "type": "category",
+              "width": 0,
+              "xAxisId": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowDataOverflow": false,
+              "allowDecimals": true,
+              "allowDuplicatedCategory": true,
+              "domain": Array [
+                "auto",
+                "auto",
+              ],
+              "height": 0,
+              "hide": false,
+              "mirror": false,
+              "orientation": "left",
+              "padding": Object {
+                "bottom": 0,
+                "top": 0,
+              },
+              "reversed": false,
+              "scale": "auto",
+              "stroke": "black",
+              "tickCount": 5,
+              "type": "number",
+              "width": 60,
+              "yAxisId": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "fill": "none",
+              "horizontal": true,
+              "horizontalFill": Array [],
+              "horizontalPoints": Array [],
+              "stroke": "#ccc",
+              "strokeDasharray": "3 3",
+              "vertical": true,
+              "verticalFill": Array [],
+              "verticalPoints": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "animationDuration": 400,
+              "animationEasing": "ease",
+              "contentStyle": Object {},
+              "coordinate": Object {
+                "x": 0,
+                "y": 0,
+              },
+              "cursor": true,
+              "cursorStyle": Object {},
+              "filterNull": true,
+              "isAnimationActive": true,
+              "itemSorter": [Function],
+              "itemStyle": Object {},
+              "labelStyle": Object {},
+              "offset": 10,
+              "separator": " : ",
+              "useTranslate3d": false,
+              "viewBox": Object {
+                "x1": 0,
+                "x2": 0,
+                "y1": 0,
+                "y2": 0,
+              },
+              "wrapperStyle": Object {},
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "align": "center",
+              "height": 36,
+              "iconSize": 14,
+              "layout": "horizontal",
+              "verticalAlign": "top",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "activeDot": true,
+              "animationBegin": 0,
+              "animationDuration": 1500,
+              "animationEasing": "ease",
+              "connectNulls": false,
+              "dataKey": "uv",
+              "dot": false,
+              "fill": "#8884d8",
+              "fillOpacity": 0.6,
+              "hide": false,
+              "isAnimationActive": true,
+              "legendType": "line",
+              "points": Array [],
+              "stroke": "#8884d8",
+              "type": "monotone",
+              "xAxisId": 0,
+              "yAxisId": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -74,7 +74,7 @@ const styles = theme => ({
 });
 
 
-class Header extends React.Component {
+export class Header extends React.Component {
 
   enter = (event) => {
     if (event.key === "Enter") {
