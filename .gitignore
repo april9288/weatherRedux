@@ -3,10 +3,8 @@
 # dependencies
 /node_modules
 /src/templates
-/src/tests
 .env
-*.test.js
-setupTests.js
+
 
 # testing
 /coverage
