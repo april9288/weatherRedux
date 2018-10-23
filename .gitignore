@@ -5,6 +5,8 @@
 /src/templates
 /src/tests
 .env
+*.test.js
+setupTests.js
 
 # testing
 /coverage

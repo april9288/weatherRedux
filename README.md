@@ -30,7 +30,7 @@ npm start
 
 So it will automatically run in your local server.
 
-## Built With
+## Built with
 
 * [React.js](https://reactjs.org/) - The official React.js website
 * [Redux.js](https://redux.js.org/) - It's a Javascript library helps manage React state
@@ -38,6 +38,15 @@ So it will automatically run in your local server.
 * [Dark Sky Weather API](https://darksky.net) - It returns weather data
 * [Recharts](http://recharts.org/en-US/) - It's a libarary for rendering charts with React.js
 * [Material UI](https://material-ui.com/) - It's a design framework made by Google
+
+## Unit Test with
+
+* [jest]
+* [enzyme]
+* [enzyme-adapter-react-16]
+* [fetch-mock] 
+* [moxios]
+* [redux-mock-store]
 
 ## Meta
 
