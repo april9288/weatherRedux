@@ -30,7 +30,7 @@ npm start
 
 So it will automatically run in your local server.
 
-## Built with
+## Built With
 
 * [React.js](https://reactjs.org/) - The official React.js website
 * [Redux.js](https://redux.js.org/) - It's a Javascript library helps manage React state
@@ -39,7 +39,7 @@ So it will automatically run in your local server.
 * [Recharts](http://recharts.org/en-US/) - It's a libarary for rendering charts with React.js
 * [Material UI](https://material-ui.com/) - It's a design framework made by Google
 
-## Unit Test with
+## Unit Test With
 
 * [jest]
 * [enzyme]
